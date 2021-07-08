@@ -15,5 +15,20 @@ describe("Engineer", () => {
         expect(newEngineer.gitHub).toEqual('evperkinsjr');
     });
 
+    describe("getGitHub", () => {
+        it("Should return a string", () => {
+            const newEngineer = new Engineer('Enrico', 24, 'enrico@test.com', 'evperkinsjr');
+            const returnGitHub = newEngineer.getGitHub();
+            expect(typeof(returnGitHub)).toBe("string");
+        });
+    });
+
+    describe("getRole", () => {
+        it("Should return Engineer as the role", () => {
+            const newEngineer = new Engineer('Enrico', 24, 'enrico@test.com', 'evperkinsjr');
+            const returnRole = newEngineer.getRole();
+            exprect(returnRole).toEqual("Engineer");
+        });
+    });
     
-})
+});
