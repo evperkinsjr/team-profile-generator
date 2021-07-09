@@ -16,6 +16,7 @@ This Node.js command-line application that takes in information about employees 
 <p>&nbsp</p>
 
 ## Demonstration
+https://user-images.githubusercontent.com/79537431/125019536-3adf2580-e045-11eb-9e56-aed6e80a0270.mp4
 <p>&nbsp</p>
 
 ## Links
