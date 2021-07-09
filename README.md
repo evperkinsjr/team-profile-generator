@@ -21,7 +21,7 @@ https://user-images.githubusercontent.com/79537431/125019536-3adf2580-e045-11eb-
 
 ## Links
 - [Project Repository](https://github.com/evperkinsjr/team-profile-generator)
-- Generated [index.html]()
+- Generated [index.html](./dist/index.html)
 <p>&nbsp</p>
 
 ## Installation
