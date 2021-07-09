@@ -22,7 +22,7 @@ function devTeamHTML(team) {
 
           employeeCards.push(teammate);
 
-        } else if (team[1].getRole() === 'Engineer') {
+        } else if (team[i].getRole() === 'Engineer') {
             teammate = `<div class="col-4 px-4">
             <div class="card text-white bg-primary mb-4">
               <div class="card-body">
@@ -72,13 +72,18 @@ function generateHTML(team) {
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
         <title>My Team</title>
       </head>
       <body>
         <div class="jumbotron-fluid bg-danger text-white">
           <div class="container p-2">
-            <h1 class="display-2 fw-bold">My Team</h1>
+            <h1 class="display-2 fw-bold text-center">Dev Team Profile</h1>
           </div>
         </div>
         <div class="row row-cols-4 g-1 pt-3 ms-5 me-5 justify-content-center">
