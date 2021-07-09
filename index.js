@@ -10,7 +10,7 @@ const outputPath = path.join(OUTPUT_DIR, "index.html");
 
 const render = require("./src/generateHTML.js");
 
-const teamMembers = [];
+const team = [];
 const idArray = [];
 
 function appMenu() {
@@ -73,7 +73,7 @@ function appMenu() {
       }
     ]).then(answers => {
       const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber);
-      teamMembers.push(manager);
+      team.push(manager);
       idArray.push(answers.managerId);
       createTeam();
     });
@@ -165,7 +165,7 @@ function appMenu() {
       }
     ]).then(answers => {
       const engineer = new Engineer(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.engineerGithub);
-      teamMembers.push(engineer);
+      team.push(engineer);
       idArray.push(answers.engineerId);
       createTeam();
     });
@@ -230,7 +230,7 @@ function appMenu() {
       }
     ]).then(answers => {
       const intern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.internSchool);
-      teamMembers.push(intern);
+      team.push(intern);
       idArray.push(answers.internId);
       createTeam();
     });
@@ -241,7 +241,7 @@ function appMenu() {
     if (!fs.existsSync(OUTPUT_DIR)) {
       fs.mkdirSync(OUTPUT_DIR)
     }
-    fs.writeFileSync(outputPath, render(teamMembers), "utf-8");
+    fs.writeFileSync(outputPath, render.generateHTML(team), "utf-8");
   }
 
   createManager();
