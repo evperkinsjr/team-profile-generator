@@ -12,7 +12,7 @@
 <p>&nbsp</p>
 
 ## Description
-This Node.js command-line application takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person.
+This Node.js command-line application takes in information about employees on a software engineering team, then generates a HTML webpage that displays summaries for each person.
 <p>&nbsp</p>
 
 ## Demonstration
